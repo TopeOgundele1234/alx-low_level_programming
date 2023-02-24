@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 int largest_number(int a, int b, int c);
-int leap_year(int month, int day, int year);
+int print_remaining_days(int month, int day, int year);
 void positive_or_negative(int i);
 
 #endif /* MAIN_H */
