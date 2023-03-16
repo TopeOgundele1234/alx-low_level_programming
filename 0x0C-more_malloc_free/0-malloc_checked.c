@@ -1,32 +1,17 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
 /**
-  *create_array - main function
-  *@size : the size of the integer
-  *@c : the car that will have the size
-  *Return: character
+  *malloc_checked - check if malloc library is assigning memories
+  *@b: variable
+  *Return: integer
   */
-char *create_array(unsigned int size, char c)
+
+void *malloc_checked(unsigned int b)
 {
-char *s;
-if (size == 0)
+int *ptr;
+ptr = malloc(b);
+if (ptr == NULL)
 {
-return (NULL);
+exit(98);
 }
-s = malloc(sizeof(char) * size);
-if (s == NULL)
-{
-return (NULL);
-}
-else
-{
-unsigned int i = 0;
-while (s[i] == '\0')
-{
-s[i] = c;
-i++;
-}
-}
-return (s);
+return (ptr);
 }
