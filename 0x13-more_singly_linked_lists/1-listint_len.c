@@ -1,7 +1,7 @@
 include "lists.h"
 
 /**
-  *listint_len - The function return the length of a linked list.
+  *listint_len - This function return the length of a linked list.
   *@h: The linked list will be  use to print its elements
   *Return: The number of elements in the lined list
   */
